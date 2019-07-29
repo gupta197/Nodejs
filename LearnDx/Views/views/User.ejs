@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Details</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style media="screen">
+      .th{
+        text-align: center;
+        font-size: 16px;
+        font-family: sans-serif;
+        background-color: #777799;
+        color: #FFFFFF;
+        margin: 'auto';
+      }
+      img{
+          height:100px;
+        width:100px;    }
+        th{
+          text-align: center;
+        }
+        #ADD{
+          float: right;
+        }
+        form{
+          float:left;
+        }
+        h1{
+          text-transform: capitalize;
+          font-style: ;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 align="center"><b>User Details</b></h1>
+  <div class="container">
+    <table class="table table-hover">
+
+      <thead>
+        <tr>
+          <td colspan="7">
+            <form action="/" method="post">
+            <input type="text" name="search" placeholder="Search...">
+              <select name="role">
+                <option value=""> Select Role</option>
+              <option value="Admin">Admin</option>
+              <option value="Senior">Senior</option>
+              <option value="client">Client</option>
+            </select>
+            <input type="submit" value="Search" class="btn btn-info">
+          </form>
+            <a class="btn btn-success" id="ADD" title="add" href="/add" > + Add</a>
+          </tr>
+      <tr class="th">
+        <th>ID</th><th>Image</th><th>UserName</th><th>Email</th><th>Role</th><th>CreatedAt</th>
+        <th>Action </th>
+      </tr>
+      <thead>
+        <% for(var i =0;i < detail.length; i++){%>
+
+           <tr class="inner">
+            <td><%= detail[i].Id %> </td>
+            <td><img src="images/<%= detail[i].Image %>" class="img-thumbnail"></td>
+            <td>  <%= detail[i].UserName %></td>
+            <td>  <%= detail[i].Email %></td>
+            <td>  <%= detail[i].Role %></td>
+            <td>  <%= detail[i].CreatedAt %></td>
+            <td class="relative-cell">
+              <span class="custom-tiles">
+                <form class="" action="/edit/<%= detail[i].Id %>" method="get">
+                <button class="btn btn-info"  title="edit"> edit</button>
+              </form>    
+                <form class="" action="/delete/<%= detail[i].Id %>" method="post">
+                  <button class="btn btn-danger" title="delete"> delete</button>
+                </form>
+              </span>
+          </tr>
+        <% } %>
+          <tr>
+            <td colspan="6" align="center" >
+              <% if (pageCount > 1) { %>
+              <ul class="pagination">
+                <% if (currentPage > 1) { %>
+                	<li><a href="/1">&laquo;</a></li>
+                <% } %>
+                <% var i = 1;
+                if (currentPage > 5) {
+                i = +currentPage - 4;
+                } %>
+                <% if (i !== 1) { %>
+                	<li class="disabled"><a href="#">...</a></li>
+                <% } %>
+                <% for (i; i<=pageCount; i++) { %>
+                  <% if (currentPage == i) { %>
+                  	<li class="active"><span><%= i %> <span class="sr-only">(current)</span></span></li>
+                  <% } else { %>
+                  	<li><a href="/<%= i %>"><%= i %></a></li>
+                  <% } %>
+                  <% if (i == (+currentPage + 4)) { %>
+                  	<li class="disabled"><a href="#">...</a></li>
+                  <% break; } %>
+                <% } %>
+                <% if (currentPage != pageCount) { %>
+                	<li><a href="/<%= pageCount %>">&raquo;</a></li>
+                <% } %>
+              </ul>
+              <% } %>
+            </td>
+          </tr>
+    </table>
+   </div>
+  </body>
+</html>
