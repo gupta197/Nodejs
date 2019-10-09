@@ -1,0 +1,29 @@
+2019-10-09 11:00:13 [32minfo[3
+2019-10-09 11:30:07 [32minfo[39m [app.js]:  /error ip : ::1  protocols: http hostname: localhost
+2019-10-09 11:30:11 [32minfo[39m [app.js]:  /error ip : ::1  protocols: http hostname: localhost
+2019-10-09 11:31:07 [31merror[39m [app.js]: ::1 - - [09/Oct/2019:06:01:07 +0000] "GET /45 HTTP/1.1" 404 141 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+
+2019-10-09 11:31:11 [32minfo[39m [app.js]: / ip : ::1 methods: get protocols: http hostname: localhost
+2019-10-09 11:31:16 [32minfo[39m [app.js]: homepage : /error ip : ::1 protocols: http hostname: localhost
+2019-10-09 11:31:28 [31merror[39m [app.js]: ::1 - - [09/Oct/2019:06:01:28 +0000] "GET /error/545 HTTP/1.1" 404 148 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+
+2019-10-09 11:31:33 [32minfo[39m [app.js]: homepage : /error ip : ::1 protocols: http hostname: localhost
+2019-10-09 11:31:44 [32minfo[39m [app.js]: / ip : ::1 methods: get protocols: http hostname: localhost
+2019-10-09 11:32:37 [32minfo[39m [app.js]: / ip : ::1 methods: get protocols: http hostname: localhost
+2019-10-09 11:32:37 [32minfo[39m [app.js]: / ip : ::1 protocols: http hostname: localhost
+2019-10-09 11:32:42 [32minfo[39m [app.js]: / ip : ::1 methods: get protocols: http hostname: localhost
+2019-10-09 11:32:42 [32minfo[39m [app.js]: / ip : ::1 protocols: http hostname: localhost
+2019-10-09 11:32:47 [32minfo[39m [app.js]: homepage : /error ip : ::1 protocols: http hostname: localhost
+2019-10-09 11:33:00 [32minfo[39m [app.js]:  /error ip : ::1  protocols: http hostname: localhost
+2019-10-09 11:33:40 [32minfo[39m [app.js]: / ip : ::1 methods: get protocols: http hostname: localhost
+2019-10-09 11:33:44 [32minfo[39m [app.js]: homepage : /error ip : ::1 protocols: http hostname: localhost
+2019-10-09 12:26:49 [32minfo[39m [app.js]: / ip : ::1 methods: get protocols: http hostname: localhost
+2019-10-09 12:26:50 [31merror[39m [app.js]: ::1 - - [09/Oct/2019:06:56:50 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+
+2019-10-09 12:26:56 [32minfo[39m [app.js]: homepage : /error ip : ::1 protocols: http hostname: localhost
+2019-10-09 12:28:27 [32minfo[39m [app.js]: homepage : /error ip : ::1 protocols: http hostname: localhost
+2019-10-09 12:28:29 [32minfo[39m [app.js]: homepage : /error ip : ::1 protocols: http hostname: localhost
+2019-10-09 13:30:05 [32minfo[39m [app.js]: homepage : /error ip : ::1 protocols: http hostname: localhost
+2019-10-09 13:30:15 [31merror[39m [app.js]: ::1 - - [09/Oct/2019:08:00:15 +0000] "GET /error/84555 HTTP/1.1" 404 150 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+
+2019-10-09 13:30:20 [32minfo[39m [app.js]: homepage : /error ip : ::1 protocols: http hostname: localhost

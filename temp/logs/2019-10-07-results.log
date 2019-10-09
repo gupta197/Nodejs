@@ -1,0 +1,4 @@
+2019-10-07 11:37:38 [32minfo[39m [dailyWinston.js]: ::1 - - [07/Oct/2019:06:07:38 +0000] "GET /xvdg/ HTTP/1.1" 404 144 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+
+2019-10-07 11:37:43 [32minfo[39m [dailyWinston.js]: ::1 - - [07/Oct/2019:06:07:43 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+

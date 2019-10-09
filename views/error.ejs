@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Errors</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style media="screen">
+        .th {
+            text-align: center;
+            font-size: 16px;
+            font-family: sans-serif;
+            background-color: #777799;
+            color: #FFFFFF;
+            margin: 'auto';
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        #ADD {
+            float: right;
+        }
+
+        form {
+            float: left;
+        }
+
+        h1 {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center"><b>User Details</b></h1>
+    <div class="container">
+        <table class="table table-hover">
+
+            <thead>
+                <tr>
+                    <td colspan="7">
+                        <form action="/error" method="post">
+                            <select name="level">
+                                <option value="" > Filters</option>
+                                <option value="error">Error</option>
+                                <option value="warn">Warn</option>
+                                <option value="info">Info</option>
+                                <option value="debug">Debug</option>
+                            </select>
+                            <input type="submit" value="Search" class="btn btn-info">
+                        </form>
+                </tr>
+                <tr class="th">
+                    <th>Timestamp</th>
+                    <th>Level</th>
+                    <th>Message</th>
+                </tr>
+                <thead>
+                    <% for(var i =0;i < detail.length; i++){%>
+                    <tr class="inner">
+                        <td><%= detail[i].timestamp %> </td>
+                        <td> <%= detail[i].level %></td>
+                        <td> <%= detail[i].message %></td>
+                    </tr>
+                    <% } %>
+        </table>
+    </div>
+</body>
+
+</html>

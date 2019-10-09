@@ -1,0 +1,10 @@
+2019-10-04 17:14:22 [34mdebug[39m [dailyWinston.js]: Debugging info
+2019-10-04 17:14:22 [36mverbose[39m [dailyWinston.js]: Verbose info
+2019-10-04 17:14:22 [32minfo[39m [dailyWinston.js]: Hello world
+2019-10-04 17:14:22 [33mwarn[39m [dailyWinston.js]: Warning message
+2019-10-04 17:14:22 [31merror[39m [dailyWinston.js]: Error info
+2019-10-04 17:14:50 [34mdebug[39m [dailyWinston.js]: Debugging info
+2019-10-04 17:14:50 [36mverbose[39m [dailyWinston.js]: Verbose info
+2019-10-04 17:14:50 [32minfo[39m [dailyWinston.js]: Hello world
+2019-10-04 17:14:50 [33mwarn[39m [dailyWinston.js]: Warning message
+2019-10-04 17:14:50 [31merror[39m [dailyWinston.js]: Error info
